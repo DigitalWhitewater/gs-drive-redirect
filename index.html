@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Redirecting…</title>
+  <script>
+    fetch("target.txt?t=" + Date.now(), { cache: "no-store" })
+      .then(r => r.text())
+      .then(u => location.replace(u.trim()))
+      .catch(() => document.body.textContent = "Redirect failed.");
+  </script>
+</head>
+<body>
+  <p>Redirecting to the troop's drive...</a>…</p>
+</body>
+</html>
